@@ -29,6 +29,8 @@ const getSocket = ()=> {
         onBack: async (dist) => {await cmder.sendBack(dist)},
         onRight: async (dist) => {await cmder.sendRight(dist)},
         onLeft: async (dist) => {await cmder.sendLeft(dist)},
+        onCw: async (dist) => {await cmder.sendCw(dist)}, //sentido do relógio
+        onCcw: async (dist) => {await cmder.sendCcw(dist)}, //sentido contrário do relógio
         onFlip: async () => {await cmder.sendFlip()},
         onBattery: async () => {await cmder.getBattery()}
     })

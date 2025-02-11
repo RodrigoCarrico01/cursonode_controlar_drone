@@ -82,7 +82,29 @@ class Commander {
             })
         })
     }
-    sendFlip(distance=20){  
+    sendCw(distance=20){   //aqui n é distancia, é graus 
+        return new Promise((res, rej)=>{
+            this.socket.send(`cw ${distance}`, 0, `cw ${distance}`.length, this.port, this.host, (err)=>{
+                if(err){
+                    rej(err)
+                } else {
+                    return res()
+                }
+            })
+        })
+    }
+    sendCcw(distance=20){  //aqui n é distancia, é graus 
+        return new Promise((res, rej)=>{
+            this.socket.send(`ccw ${distance}`, 0, `ccw ${distance}`.length, this.port, this.host, (err)=>{
+                if(err){
+                    rej(err)
+                } else {
+                    return res()
+                }
+            })
+        })
+    }
+    sendFlip(){  
         return new Promise((res, rej)=>{
             this.socket.send(`flip b`, 0, `flip b`.length, this.port, this.host, (err)=>{
                 if(err){
@@ -93,7 +115,7 @@ class Commander {
             })
         })
     }
-    getBattery(distance=20){  
+    getBattery(){  
         return new Promise((res, rej)=>{
             this.socket.send(`battery?`, 0, `battery?`.length, this.port, this.host, (err)=>{
                 if(err){

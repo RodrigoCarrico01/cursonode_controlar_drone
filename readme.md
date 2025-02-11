@@ -20,3 +20,16 @@ ______________________________
 3º Conecta o drone ao teu computador
 4º Depois é só dar node source/init.js
 5º e depois executa os comandos
+
+
+______________________________
+
+Sequência de voar e pousar o drone
+
+// aviso, quando o drone tem menos de 5% ele começa o pouso de emergência
+
+1. iniciar a aplicação `node init`
+2. ver quanta bateria temos `battery`
+3. iniciar voo `takeoff`
+4. controlar como queremos `forward 10` ou `left 23` ou `back 100` etc...
+5. pousar o drone `land`
