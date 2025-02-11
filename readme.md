@@ -43,7 +43,6 @@ This project is a Node.js application designed to control the DJI Tello drone us
 | `cw X`        | Rotates X degrees clockwise                   |
 | `ccw X`       | Rotates X degrees counterclockwise            |
 | `flip`        | Performs a basic flip maneuver                |
-|---------------|-----------------------------------------------|
 
 **Note:** The drone will automatically land if the battery level drops below 5%.
 
@@ -161,7 +160,7 @@ Este projeto consiste numa aplicação Node.js para controlar o drone DJI Tello 
 | `cw X`       | Rotacionar no sentido horário X graus          |
 | `ccw X`      | Rotacionar no sentido anti-horário X graus     |
 | `flip`       | Realizar um movimento flip básico              |
-|--------------|------------------------------------------------|
+
 
 **Nota:** O drone pousará automaticamente se a bateria estiver abaixo de 5%.
 
