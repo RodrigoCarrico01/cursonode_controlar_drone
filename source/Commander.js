@@ -16,7 +16,7 @@ class Commander {
             })
         })
     }
-    sendTakeOff(){
+    sendTakeoff(){
         return new Promise((res, rej)=>{
             this.socket.send('takeoff', 0, 'takeoff'.length, this.port, this.host, (err)=>{
                 if(err){
