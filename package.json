@@ -1,0 +1,20 @@
+{
+  "name": "cursnonode_controlardrone_djitello",
+  "version": "1.0.0",
+  "description": "este código vai servir para controlar o drone da djitello \r https://store.dji.com/pt/shop/tello-series",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RodrigoCarrico01/cursonode_controlar_drone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RodrigoCarrico01/cursonode_controlar_drone/issues"
+  },
+  "homepage": "https://github.com/RodrigoCarrico01/cursonode_controlar_drone#readme"
+}
